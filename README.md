@@ -35,13 +35,15 @@ Qualsevol projecte que impliqui canvis freqüents i treball en equip es benefici
 
 ### 1.5 Quines diferències hi ha entre un sistema de control de versions com Git i un sistema tradicional d'emmagatzematge de fitxers?
 
-| Característica | Sistema tradicional (carpetes/USB) | Git |
-|---|---|---|
-| Historial de canvis | No en té | Registra cada canvi amb data i autor |
-| Col·laboració | Difícil, risc de sobreescriure | Fusió controlada de canvis |
-| Recuperació d'errors | Cal fer còpies manuals | Es pot revertir a qualsevol commit |
-| Branques | No existeixen | Permet treballar en paral·lel |
-| Traçabilitat | Nul·la | Total (qui, quan, per què) |
+Un sistema tradicional d’emmagatzematge de fitxers, com carpetes locals o USB, no guarda un historial dels canvis. En canvi, Git registra cada modificació amb informació com la data i l’autor.
+
+Pel que fa a la col·laboració, en un sistema tradicional és difícil treballar en equip perquè es poden sobreescriure fitxers fàcilment. Amb Git, els canvis es poden fusionar de manera controlada, evitant conflictes.
+
+Respecte a la recuperació d’errors, en sistemes tradicionals cal fer còpies manuals per evitar perdre informació. Git permet tornar a qualsevol versió anterior del projecte gràcies als commits.
+
+A més, els sistemes tradicionals no tenen branques, mentre que Git permet crear branques per treballar en paral·lel sense afectar la versió principal.
+
+Finalment, la traçabilitat en un sistema tradicional és nul·la, mentre que Git ofereix un seguiment complet de qui ha fet cada canvi, quan i per què.
 
 ---
 
@@ -85,7 +87,7 @@ En aquesta pràctica, per exemple:
 
 ### 2.5 Per a què serveixen les pull requests en un projecte col·laboratiu?
 
-Les pull requests (PR) serveixen per proposar la fusió dels canvis d'una branca a una altra de forma controlada. En un projecte col·laboratiu permeten:
+Les pull requests serveixen per proposar la fusió dels canvis d'una branca a una altra de forma controlada. En un projecte col·laboratiu permeten:
 - Revisar el codi abans d'integrar-lo.
 - Comentar línies específiques i suggerir millores.
 - Assegurar que el codi passa les proves automàtiques.
@@ -103,16 +105,17 @@ Un compte d'usuari a GitHub és un perfil personal que identifica un desenvolupa
 - Fer commits, obrir issues i pull requests.
 - Configurar permisos i accedir a repositoris privats.
 
-Sense compte, només es pot veure codi públic però no contribuir-hi.
+Sense compte només es pot veure codi públic.
 
 ### 3.2 Diferència entre repositori públic i privat
 
-| | Repositori Públic | Repositori Privat |
-|---|---|---|
-| Visibilitat | Qualsevol persona pot veure'l | Només els col·laboradors autoritzats |
-| Col·laboració | Qualsevol pot fer fork | Només els convidats |
-| Ús habitual | Open source, portfolis | Projectes empresarials o personals |
-| Cost | Gratuït | Gratuït (amb limitacions en plans gratuïts) |
+Un repositori públic és accessible per qualsevol persona, ja que qualsevol usuari pot veure el seu contingut. En canvi, un repositori privat només pot ser vist pels col·laboradors autoritzats.
+
+Pel que fa a la col·laboració, en un repositori públic qualsevol usuari pot fer un fork i treballar sobre el projecte, mentre que en un repositori privat només hi poden participar les persones convidades.
+
+Respecte a l’ús, els repositoris públics s’utilitzen habitualment en projectes de codi obert o per mostrar treballs en un portfoli. En canvi, els repositoris privats són més comuns en projectes empresarials o personals on es vol mantenir el codi restringit.
+
+Finalment, tant els repositoris públics com els privats poden ser gratuïts, però els repositoris privats poden tenir certes limitacions segons el pla utilitzat.
 
 ### 3.3 Com s'afegeix un col·laborador a un repositori?
 
@@ -124,13 +127,11 @@ Sense compte, només es pot veure codi públic però no contribuir-hi.
 
 ### 3.4 Quins rols o permisos pot tenir un usuari?
 
-| Rol | Permisos principals |
-|---|---|
-| **Read** | Pot veure i clonar el repositori |
-| **Triage** | Pot gestionar issues i pull requests |
-| **Write** | Pot fer push de canvis al repositori |
-| **Maintain** | Pot gestionar el repositori sense accés a configuració crítica |
-| **Admin** | Accés total, inclosa la configuració i eliminació del repositori |
+ **Read**  Pot veure i clonar el repositori.
+ **Triage**  Pot gestionar issues i pull requests.
+ **Write**  Pot fer push de canvis al repositori. 
+ **Maintain**  Pot gestionar el repositori sense accés a configuració crítica. 
+ **Admin**  Accés total, inclosa la configuració i eliminació del repositori.
 
 ### 3.5 Per què és important gestionar correctament els permisos?
 
